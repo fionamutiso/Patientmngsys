@@ -99,13 +99,6 @@
     <Compile Include="DoctorsForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="LoginForm.Designer.vb">
       <DependentUpon>LoginForm.vb</DependentUpon>
     </Compile>
@@ -137,7 +130,9 @@
     <Compile Include="PatientsForm.Designer.vb">
       <DependentUpon>PatientsForm.vb</DependentUpon>
     </Compile>
-    <Compile Include="PatientsForm.vb" />
+    <Compile Include="PatientsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AppointmentsForm.resx">
@@ -148,9 +143,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DoctorsForm.resx">
       <DependentUpon>DoctorsForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.vb</DependentUpon>

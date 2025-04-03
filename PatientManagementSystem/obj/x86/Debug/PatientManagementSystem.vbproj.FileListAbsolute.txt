@@ -25,11 +25,9 @@ C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\De
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.AppointmentsForm.resources
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.BillingForm.resources
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.DoctorsForm.resources
-C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.Form1.resources
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.LoginForm.resources
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.MainMenu.resources
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.Resources.resources
-C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.PatientsForm.resources
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.vbproj.GenerateResource.cache
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.vbproj.CoreCompileInputs.cache
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientM.CBA5D90E.Up2Date
@@ -38,3 +36,4 @@ C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\De
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.pdb
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\System.Data.SqlClient.dll
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\System.Data.SqlClient.xml
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.frmPatients.resources

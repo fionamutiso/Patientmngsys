@@ -65,7 +65,7 @@ Partial Class DoctorsForm
         'txtContact
         '
         Me.txtContact.Location = New System.Drawing.Point(122, 153)
-        Me.txtContact.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtContact.Margin = New System.Windows.Forms.Padding(2)
         Me.txtContact.Name = "txtContact"
         Me.txtContact.Size = New System.Drawing.Size(200, 20)
         Me.txtContact.TabIndex = 3
@@ -73,7 +73,7 @@ Partial Class DoctorsForm
         'txtSpecialty
         '
         Me.txtSpecialty.Location = New System.Drawing.Point(122, 108)
-        Me.txtSpecialty.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtSpecialty.Margin = New System.Windows.Forms.Padding(2)
         Me.txtSpecialty.Name = "txtSpecialty"
         Me.txtSpecialty.Size = New System.Drawing.Size(200, 20)
         Me.txtSpecialty.TabIndex = 4
@@ -81,7 +81,7 @@ Partial Class DoctorsForm
         'txtDoctorName
         '
         Me.txtDoctorName.Location = New System.Drawing.Point(122, 63)
-        Me.txtDoctorName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtDoctorName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtDoctorName.Name = "txtDoctorName"
         Me.txtDoctorName.Size = New System.Drawing.Size(200, 20)
         Me.txtDoctorName.TabIndex = 5
@@ -90,7 +90,7 @@ Partial Class DoctorsForm
         '
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(245, 197)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(100, 25)
         Me.btnExit.TabIndex = 6
@@ -101,7 +101,7 @@ Partial Class DoctorsForm
         '
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.Location = New System.Drawing.Point(122, 197)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(100, 25)
         Me.btnAdd.TabIndex = 7
@@ -121,7 +121,7 @@ Partial Class DoctorsForm
         Me.Controls.Add(Me.lblContact)
         Me.Controls.Add(Me.lblSpecialty)
         Me.Controls.Add(Me.lblDoctorName)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "DoctorsForm"
         Me.Text = "DoctorsForm"
         Me.ResumeLayout(False)

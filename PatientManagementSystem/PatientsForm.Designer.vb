@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class PatientsForm
+Partial Class frmPatients
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,169 +22,182 @@ Partial Class PatientsForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lblPatientName = New System.Windows.Forms.Label()
-        Me.lblGender = New System.Windows.Forms.Label()
-        Me.lblContact = New System.Windows.Forms.Label()
-        Me.lblAge = New System.Windows.Forms.Label()
-        Me.btnAdd = New System.Windows.Forms.Button()
-        Me.btnExit = New System.Windows.Forms.Button()
-        Me.btnCancel = New System.Windows.Forms.Button()
-        Me.txtPatientName = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PatientsForm = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.PatientAdd = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.dtpDOB = New System.Windows.Forms.DateTimePicker()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.txtContact = New System.Windows.Forms.TextBox()
-        Me.txtAge = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.cmbGender = New System.Windows.Forms.ComboBox()
+        Me.btnDelete = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'lblPatientName
+        'Label1
         '
-        Me.lblPatientName.AutoSize = True
-        Me.lblPatientName.Location = New System.Drawing.Point(55, 65)
-        Me.lblPatientName.Name = "lblPatientName"
-        Me.lblPatientName.Size = New System.Drawing.Size(97, 17)
-        Me.lblPatientName.TabIndex = 0
-        Me.lblPatientName.Text = "Patient Name:"
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(16, 82)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(35, 13)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Name"
         '
-        'lblGender
+        'PatientsForm
         '
-        Me.lblGender.AutoSize = True
-        Me.lblGender.Location = New System.Drawing.Point(55, 241)
-        Me.lblGender.Name = "lblGender"
-        Me.lblGender.Size = New System.Drawing.Size(60, 17)
-        Me.lblGender.TabIndex = 1
-        Me.lblGender.Text = "Gender:"
+        Me.PatientsForm.AutoSize = True
+        Me.PatientsForm.Location = New System.Drawing.Point(16, 136)
+        Me.PatientsForm.Name = "PatientsForm"
+        Me.PatientsForm.Size = New System.Drawing.Size(42, 13)
+        Me.PatientsForm.TabIndex = 1
+        Me.PatientsForm.Text = "Gender"
         '
-        'lblContact
+        'Label3
         '
-        Me.lblContact.AutoSize = True
-        Me.lblContact.Location = New System.Drawing.Point(55, 186)
-        Me.lblContact.Name = "lblContact"
-        Me.lblContact.Size = New System.Drawing.Size(60, 17)
-        Me.lblContact.TabIndex = 2
-        Me.lblContact.Text = "Contact:"
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(16, 195)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(42, 19)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "DOB"
         '
-        'lblAge
+        'Label4
         '
-        Me.lblAge.AutoSize = True
-        Me.lblAge.Location = New System.Drawing.Point(55, 124)
-        Me.lblAge.Name = "lblAge"
-        Me.lblAge.Size = New System.Drawing.Size(33, 17)
-        Me.lblAge.TabIndex = 3
-        Me.lblAge.Text = "Age"
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(16, 251)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(57, 19)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "Contact"
         '
-        'btnAdd
+        'PatientAdd
         '
-        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(84, 312)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(88, 32)
-        Me.btnAdd.TabIndex = 4
-        Me.btnAdd.Text = "Add"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.PatientAdd.Location = New System.Drawing.Point(295, 344)
+        Me.PatientAdd.Name = "PatientAdd"
+        Me.PatientAdd.Size = New System.Drawing.Size(100, 25)
+        Me.PatientAdd.TabIndex = 4
+        Me.PatientAdd.Text = "Add"
+        Me.PatientAdd.UseVisualStyleBackColor = True
         '
-        'btnExit
+        'btnUpdate
         '
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(428, 312)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(88, 32)
-        Me.btnExit.TabIndex = 5
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnUpdate.Location = New System.Drawing.Point(448, 383)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(100, 25)
+        Me.btnUpdate.TabIndex = 5
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
         '
-        'btnCancel
+        'dtpDOB
         '
-        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(263, 312)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(88, 32)
-        Me.btnCancel.TabIndex = 6
-        Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = True
+        Me.dtpDOB.Location = New System.Drawing.Point(195, 189)
+        Me.dtpDOB.Name = "dtpDOB"
+        Me.dtpDOB.Size = New System.Drawing.Size(200, 20)
+        Me.dtpDOB.TabIndex = 6
         '
-        'txtPatientName
+        'txtName
         '
-        Me.txtPatientName.Location = New System.Drawing.Point(188, 65)
-        Me.txtPatientName.Name = "txtPatientName"
-        Me.txtPatientName.Size = New System.Drawing.Size(119, 22)
-        Me.txtPatientName.TabIndex = 7
+        Me.txtName.Location = New System.Drawing.Point(195, 79)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(200, 20)
+        Me.txtName.TabIndex = 7
         '
         'txtContact
         '
-        Me.txtContact.Location = New System.Drawing.Point(188, 181)
+        Me.txtContact.Location = New System.Drawing.Point(195, 248)
         Me.txtContact.Name = "txtContact"
-        Me.txtContact.Size = New System.Drawing.Size(119, 22)
+        Me.txtContact.Size = New System.Drawing.Size(200, 20)
         Me.txtContact.TabIndex = 8
         '
-        'txtAge
+        'DataGridView1
         '
-        Me.txtAge.Location = New System.Drawing.Point(188, 124)
-        Me.txtAge.Name = "txtAge"
-        Me.txtAge.Size = New System.Drawing.Size(119, 22)
-        Me.txtAge.TabIndex = 9
+        Me.DataGridView1.AllowUserToOrderColumns = True
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(448, 55)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(311, 305)
+        Me.DataGridView1.TabIndex = 11
         '
         'cmbGender
         '
         Me.cmbGender.FormattingEnabled = True
-        Me.cmbGender.Location = New System.Drawing.Point(188, 238)
+        Me.cmbGender.Items.AddRange(New Object() {"Female", "Male"})
+        Me.cmbGender.Location = New System.Drawing.Point(195, 133)
         Me.cmbGender.Name = "cmbGender"
-        Me.cmbGender.Size = New System.Drawing.Size(105, 24)
-        Me.cmbGender.TabIndex = 10
+        Me.cmbGender.Size = New System.Drawing.Size(200, 21)
+        Me.cmbGender.TabIndex = 12
         '
-        'PatientsForm
+        'btnDelete
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.btnDelete.Location = New System.Drawing.Point(659, 383)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(100, 25)
+        Me.btnDelete.TabIndex = 13
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(19, 303)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(45, 13)
+        Me.Label2.TabIndex = 14
+        Me.Label2.Text = "Address"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(195, 303)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
+        Me.TextBox1.TabIndex = 15
+        '
+        'frmPatients
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(711, 388)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.cmbGender)
-        Me.Controls.Add(Me.txtAge)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.txtContact)
-        Me.Controls.Add(Me.txtPatientName)
-        Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.lblAge)
-        Me.Controls.Add(Me.lblContact)
-        Me.Controls.Add(Me.lblGender)
-        Me.Controls.Add(Me.lblPatientName)
-        Me.Name = "PatientsForm"
-        Me.Text = "PatientsForm"
+        Me.Controls.Add(Me.txtName)
+        Me.Controls.Add(Me.dtpDOB)
+        Me.Controls.Add(Me.btnUpdate)
+        Me.Controls.Add(Me.PatientAdd)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.PatientsForm)
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "frmPatients"
+        Me.Text = "Patients"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents lblPatientName As System.Windows.Forms.Label
-    Friend WithEvents lblGender As System.Windows.Forms.Label
-    Friend WithEvents lblContact As System.Windows.Forms.Label
-    Friend WithEvents lblAge As System.Windows.Forms.Label
-    Friend WithEvents btnAdd As System.Windows.Forms.Button
-    Friend WithEvents btnExit As System.Windows.Forms.Button
-    Friend WithEvents btnCancel As System.Windows.Forms.Button
-    Friend WithEvents txtPatientName As System.Windows.Forms.TextBox
-    Friend WithEvents txtContact As System.Windows.Forms.TextBox
-    Friend WithEvents txtAge As System.Windows.Forms.TextBox
-    Friend WithEvents cmbGender As System.Windows.Forms.ComboBox
 
-    Private Sub btnAdd_Click(sender As System.Object, e As System.EventArgs) Handles btnAdd.Click
-        Try
-            ' Validation: Check if fields are empty
-            If txtPatientName.Text = "" Or txtAge.Text = "" Or txtContact.Text = "" Or cmbGender.Text = "" Then
-                MessageBox.Show("Please enter all details", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Else
-                MessageBox.Show("Patient added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            End If
-        Catch ex As Exception
-            MessageBox.Show("An error occurred: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-    End Sub
-
-    Private Sub btnExit_Click(sender As System.Object, e As System.EventArgs) Handles btnExit.Click
-        Me.Close()
-    End Sub
-
-    Private Sub PatientsForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-        cmbGender.Items.Clear()
-        cmbGender.Items.Add("Male")
-        cmbGender.Items.Add("Female")
-        cmbGender.Items.Add("Other")
-    End Sub
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PatientsForm As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents PatientAdd As Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents dtpDOB As DateTimePicker
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents txtContact As TextBox
+    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents cmbGender As ComboBox
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class
