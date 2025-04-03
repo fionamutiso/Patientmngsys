@@ -1,0 +1,16 @@
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\bin\Release\PatientManagementSystem.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\bin\Release\PatientManagementSystem.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\bin\Release\PatientManagementSystem.xml
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.vbprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.AppointmentsForm.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.BillingForm.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.DoctorsForm.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.Form1.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.LoginForm.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.MainMenu.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.Resources.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.PatientsForm.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.vbproj.GenerateResource.Cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.xml
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Release\PatientManagementSystem.pdb

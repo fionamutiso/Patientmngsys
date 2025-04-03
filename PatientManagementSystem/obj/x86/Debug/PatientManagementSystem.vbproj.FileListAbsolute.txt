@@ -1,0 +1,40 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.Form1.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.LoginForm.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.vbproj.GenerateResource.Cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.AppointmentsForm.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.BillingForm.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.DoctorsForm.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.MainMenu.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.PatientsForm.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\bin\Debug\PatientManagementSystem.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\bin\Debug\PatientManagementSystem.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\bin\Debug\PatientManagementSystem.xml
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.xml
+C:\Users\Administrator\AppData\Local\Temporary Projects\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.xml
+C:\Users\Administrator\documents\visual studio 2010\Projects\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.pdb
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\PatientManagementSystem.exe.config
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\PatientManagementSystem.exe
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\PatientManagementSystem.pdb
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\PatientManagementSystem.xml
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\System.Data.SQLite.dll
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.vbproj.AssemblyReference.cache
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.AppointmentsForm.resources
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.BillingForm.resources
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.DoctorsForm.resources
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.Form1.resources
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.LoginForm.resources
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.MainMenu.resources
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.Resources.resources
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.PatientsForm.resources
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.vbproj.GenerateResource.cache
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.vbproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientM.CBA5D90E.Up2Date
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.exe
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.xml
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.pdb
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\System.Data.SqlClient.dll
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\System.Data.SqlClient.xml
