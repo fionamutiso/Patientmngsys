@@ -127,6 +127,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PatientmngsysDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PatientmngsysDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PatientsForm.Designer.vb">
       <DependentUpon>PatientsForm.vb</DependentUpon>
     </Compile>
@@ -172,6 +177,17 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="PatientmngsysDataSet.xsc">
+      <DependentUpon>PatientmngsysDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PatientmngsysDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PatientmngsysDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PatientmngsysDataSet.xss">
+      <DependentUpon>PatientmngsysDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

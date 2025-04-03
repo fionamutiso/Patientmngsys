@@ -26,12 +26,15 @@ Partial Class AppointmentsForm
         Me.lblDate = New System.Windows.Forms.Label()
         Me.lblTime = New System.Windows.Forms.Label()
         Me.lblDoctor = New System.Windows.Forms.Label()
-        Me.btnSchedule = New System.Windows.Forms.Button()
-        Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
         Me.txtPatientName = New System.Windows.Forms.TextBox()
         Me.dtpTime = New System.Windows.Forms.DateTimePicker()
         Me.dtpDate = New System.Windows.Forms.DateTimePicker()
-        Me.cmbDoctor = New System.Windows.Forms.ComboBox()
+        Me.cmbDoctorName = New System.Windows.Forms.ComboBox()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.DataGridView = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblPatientName
@@ -74,32 +77,32 @@ Partial Class AppointmentsForm
         Me.lblDoctor.TabIndex = 3
         Me.lblDoctor.Text = "Doctor:"
         '
-        'btnSchedule
+        'btnAdd
         '
-        Me.btnSchedule.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSchedule.Location = New System.Drawing.Point(121, 215)
-        Me.btnSchedule.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.btnSchedule.Name = "btnSchedule"
-        Me.btnSchedule.Size = New System.Drawing.Size(100, 25)
-        Me.btnSchedule.TabIndex = 4
-        Me.btnSchedule.Text = "Schedule"
-        Me.btnSchedule.UseVisualStyleBackColor = True
+        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.Location = New System.Drawing.Point(221, 213)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(100, 25)
+        Me.btnAdd.TabIndex = 4
+        Me.btnAdd.Text = "Add"
+        Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'btnExit
+        'btnDelete
         '
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(245, 215)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(100, 25)
-        Me.btnExit.TabIndex = 6
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.Location = New System.Drawing.Point(490, 280)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(100, 25)
+        Me.btnDelete.TabIndex = 6
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
         '
         'txtPatientName
         '
         Me.txtPatientName.Location = New System.Drawing.Point(121, 55)
-        Me.txtPatientName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPatientName.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPatientName.Name = "txtPatientName"
         Me.txtPatientName.Size = New System.Drawing.Size(200, 20)
         Me.txtPatientName.TabIndex = 7
@@ -108,7 +111,7 @@ Partial Class AppointmentsForm
         '
         Me.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Time
         Me.dtpTime.Location = New System.Drawing.Point(121, 173)
-        Me.dtpTime.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtpTime.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpTime.Name = "dtpTime"
         Me.dtpTime.Size = New System.Drawing.Size(200, 20)
         Me.dtpTime.TabIndex = 9
@@ -117,38 +120,58 @@ Partial Class AppointmentsForm
         '
         Me.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
         Me.dtpDate.Location = New System.Drawing.Point(121, 130)
-        Me.dtpDate.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dtpDate.Margin = New System.Windows.Forms.Padding(2)
         Me.dtpDate.Name = "dtpDate"
         Me.dtpDate.Size = New System.Drawing.Size(200, 20)
         Me.dtpDate.TabIndex = 10
         '
-        'cmbDoctor
+        'cmbDoctorName
         '
-        Me.cmbDoctor.FormattingEnabled = True
-        Me.cmbDoctor.Location = New System.Drawing.Point(121, 91)
-        Me.cmbDoctor.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.cmbDoctor.Name = "cmbDoctor"
-        Me.cmbDoctor.Size = New System.Drawing.Size(200, 21)
-        Me.cmbDoctor.TabIndex = 11
+        Me.cmbDoctorName.FormattingEnabled = True
+        Me.cmbDoctorName.Location = New System.Drawing.Point(121, 91)
+        Me.cmbDoctorName.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmbDoctorName.Name = "cmbDoctorName"
+        Me.cmbDoctorName.Size = New System.Drawing.Size(200, 21)
+        Me.cmbDoctorName.TabIndex = 11
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.Location = New System.Drawing.Point(349, 282)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.TabIndex = 12
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
+        '
+        'DataGridView
+        '
+        Me.DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView.Location = New System.Drawing.Point(349, 43)
+        Me.DataGridView.Name = "DataGridView"
+        Me.DataGridView.Size = New System.Drawing.Size(240, 232)
+        Me.DataGridView.TabIndex = 13
         '
         'AppointmentsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(476, 283)
-        Me.Controls.Add(Me.cmbDoctor)
+        Me.ClientSize = New System.Drawing.Size(601, 338)
+        Me.Controls.Add(Me.DataGridView)
+        Me.Controls.Add(Me.btnUpdate)
+        Me.Controls.Add(Me.cmbDoctorName)
         Me.Controls.Add(Me.dtpDate)
         Me.Controls.Add(Me.dtpTime)
         Me.Controls.Add(Me.txtPatientName)
-        Me.Controls.Add(Me.btnExit)
-        Me.Controls.Add(Me.btnSchedule)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.lblDoctor)
         Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.lblPatientName)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "AppointmentsForm"
         Me.Text = "AppointmentsForm"
+        CType(Me.DataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -157,10 +180,12 @@ Partial Class AppointmentsForm
     Friend WithEvents lblDate As System.Windows.Forms.Label
     Friend WithEvents lblTime As System.Windows.Forms.Label
     Friend WithEvents lblDoctor As System.Windows.Forms.Label
-    Friend WithEvents btnSchedule As System.Windows.Forms.Button
-    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents btnDelete As System.Windows.Forms.Button
     Friend WithEvents txtPatientName As System.Windows.Forms.TextBox
     Friend WithEvents dtpTime As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpDate As System.Windows.Forms.DateTimePicker
-    Friend WithEvents cmbDoctor As System.Windows.Forms.ComboBox
+    Friend WithEvents cmbDoctorName As System.Windows.Forms.ComboBox
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents DataGridView As DataGridView
 End Class

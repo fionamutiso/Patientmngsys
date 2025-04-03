@@ -35,25 +35,29 @@ Partial Class frmPatients
         Me.cmbGender = New System.Windows.Forms.ComboBox()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(16, 82)
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 115)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(35, 13)
+        Me.Label1.Size = New System.Drawing.Size(87, 19)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Name"
+        Me.Label1.Text = "PatientName"
         '
         'PatientsForm
         '
         Me.PatientsForm.AutoSize = True
-        Me.PatientsForm.Location = New System.Drawing.Point(16, 136)
+        Me.PatientsForm.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PatientsForm.Location = New System.Drawing.Point(17, 176)
         Me.PatientsForm.Name = "PatientsForm"
-        Me.PatientsForm.Size = New System.Drawing.Size(42, 13)
+        Me.PatientsForm.Size = New System.Drawing.Size(54, 19)
         Me.PatientsForm.TabIndex = 1
         Me.PatientsForm.Text = "Gender"
         '
@@ -61,17 +65,17 @@ Partial Class frmPatients
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(16, 195)
+        Me.Label3.Location = New System.Drawing.Point(12, 234)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 19)
+        Me.Label3.Size = New System.Drawing.Size(83, 19)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "DOB"
+        Me.Label3.Text = "DateOfBirth"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(16, 251)
+        Me.Label4.Location = New System.Drawing.Point(17, 292)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(57, 19)
         Me.Label4.TabIndex = 3
@@ -79,7 +83,8 @@ Partial Class frmPatients
         '
         'PatientAdd
         '
-        Me.PatientAdd.Location = New System.Drawing.Point(295, 344)
+        Me.PatientAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PatientAdd.Location = New System.Drawing.Point(244, 374)
         Me.PatientAdd.Name = "PatientAdd"
         Me.PatientAdd.Size = New System.Drawing.Size(100, 25)
         Me.PatientAdd.TabIndex = 4
@@ -88,7 +93,8 @@ Partial Class frmPatients
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(448, 383)
+        Me.btnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.Location = New System.Drawing.Point(401, 383)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(100, 25)
         Me.btnUpdate.TabIndex = 5
@@ -97,21 +103,21 @@ Partial Class frmPatients
         '
         'dtpDOB
         '
-        Me.dtpDOB.Location = New System.Drawing.Point(195, 189)
+        Me.dtpDOB.Location = New System.Drawing.Point(144, 232)
         Me.dtpDOB.Name = "dtpDOB"
         Me.dtpDOB.Size = New System.Drawing.Size(200, 20)
         Me.dtpDOB.TabIndex = 6
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(195, 79)
+        Me.txtName.Location = New System.Drawing.Point(144, 114)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(200, 20)
         Me.txtName.TabIndex = 7
         '
         'txtContact
         '
-        Me.txtContact.Location = New System.Drawing.Point(195, 248)
+        Me.txtContact.Location = New System.Drawing.Point(144, 291)
         Me.txtContact.Name = "txtContact"
         Me.txtContact.Size = New System.Drawing.Size(200, 20)
         Me.txtContact.TabIndex = 8
@@ -120,22 +126,23 @@ Partial Class frmPatients
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(448, 55)
+        Me.DataGridView1.Location = New System.Drawing.Point(401, 55)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(311, 305)
+        Me.DataGridView1.Size = New System.Drawing.Size(358, 305)
         Me.DataGridView1.TabIndex = 11
         '
         'cmbGender
         '
         Me.cmbGender.FormattingEnabled = True
         Me.cmbGender.Items.AddRange(New Object() {"Female", "Male"})
-        Me.cmbGender.Location = New System.Drawing.Point(195, 133)
+        Me.cmbGender.Location = New System.Drawing.Point(144, 174)
         Me.cmbGender.Name = "cmbGender"
         Me.cmbGender.Size = New System.Drawing.Size(200, 21)
         Me.cmbGender.TabIndex = 12
         '
         'btnDelete
         '
+        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.Location = New System.Drawing.Point(659, 383)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(100, 25)
@@ -146,25 +153,45 @@ Partial Class frmPatients
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(19, 303)
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(17, 349)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 13)
+        Me.Label2.Size = New System.Drawing.Size(60, 19)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Address"
         '
-        'TextBox1
+        'txtAddress
         '
-        Me.TextBox1.Location = New System.Drawing.Point(195, 303)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox1.TabIndex = 15
+        Me.txtAddress.Location = New System.Drawing.Point(144, 348)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(200, 20)
+        Me.txtAddress.TabIndex = 15
+        '
+        'txtID
+        '
+        Me.txtID.Location = New System.Drawing.Point(144, 55)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(200, 20)
+        Me.txtID.TabIndex = 16
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(18, 55)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(66, 19)
+        Me.Label5.TabIndex = 17
+        Me.Label5.Text = "PatientID"
         '
         'frmPatients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtID)
+        Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.cmbGender)
@@ -199,5 +226,7 @@ Partial Class frmPatients
     Friend WithEvents cmbGender As ComboBox
     Friend WithEvents btnDelete As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtAddress As TextBox
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents Label5 As Label
 End Class

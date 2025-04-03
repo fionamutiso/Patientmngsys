@@ -1,31 +1,25 @@
 ﻿Imports System.Data.SqlClient
 Public Class frmPatients
+    Dim dtPatients As New DataTable()
+    Dim adapter As SqlDataAdapter
+    Dim connection As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
     Dim con As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
 
     Private Sub PatientAdd_Click(sender As Object, e As EventArgs) Handles PatientAdd.Click
-        Dim name As String = txtName.Text
-        Dim dob As Date = dtpDOB.Value
-        Dim contact As String = txtContact.Text
-        Dim gender As String = cmbGender.SelectedItem.ToString()
+        Dim newRow As DataRow = dtPatients.NewRow()
+        newRow("PatientID") = txtID.Text
+        newRow("PatientName") = txtName.Text
+        newRow("DateOfBirth") = dtpDOB.Value
+        newRow("Contact") = txtContact.Text
+        newRow("Gender") = cmbGender.SelectedItem.ToString()
+        newRow("Address") = txtAddress.Text
+        dtPatients.Rows.Add(newRow)
 
-        Dim query As String = "INSERT INTO Patients (Name, DOB, Contact, Gender) VALUES (@Name, @DOB, @Contact, @Gender)"
-        Dim cmd As New SqlCommand(query, con)
+        ' Save changes to database
+        adapter.Update(dtPatients)
 
-        cmd.Parameters.AddWithValue("@Name", name)
-        cmd.Parameters.AddWithValue("@DOB", dob)
-        cmd.Parameters.AddWithValue("@Contact", contact)
-        cmd.Parameters.AddWithValue("@Gender", gender)
-
-        Try
-            con.Open()
-            cmd.ExecuteNonQuery()
-            MessageBox.Show("Patient Added Successfully!")
-            LoadPatients() ' Refresh DataGridView
-        Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
-        Finally
-            con.Close()
-        End Try
+        ' Refresh DataGridView
+        DataGridView1.Refresh()
     End Sub
 
 
@@ -35,73 +29,48 @@ Public Class frmPatients
 
     Private Sub LoadPatients()
         Dim query As String = "SELECT * FROM Patients"
-        Dim adapter As New SqlDataAdapter(query, con)
-        Dim table As New DataTable()
+        adapter = New SqlDataAdapter(query, connection)
+        Dim commandBuilder As New SqlCommandBuilder(adapter)
 
-        Try
-            con.Open()
-            adapter.Fill(table)
-            DataGridView1.DataSource = table
-        Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
-        Finally
-            con.Close()
-        End Try
+        dtPatients.Clear()
+        adapter.Fill(dtPatients)
+
+        ' Bind the DataTable to the DataGridView
+        DataGridView1.DataSource = dtPatients
     End Sub
 
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         If DataGridView1.SelectedRows.Count > 0 Then
-            Dim selectedID As Integer = Convert.ToInt32(DataGridView1.SelectedRows(0).Cells("PatientID").Value)
+            Dim rowIndex As Integer = DataGridView1.SelectedRows(0).Index
+            dtPatients.Rows(rowIndex).Delete()
 
-            Dim query As String = "DELETE FROM Patients WHERE PatientID = @PatientID"
-            Dim cmd As New SqlCommand(query, con)
-            cmd.Parameters.AddWithValue("@PatientID", selectedID)
+            ' Save changes to database
+            adapter.Update(dtPatients)
 
-            Try
-                con.Open()
-                cmd.ExecuteNonQuery()
-                MessageBox.Show("Patient Deleted Successfully!")
-                LoadPatients() ' Refresh DataGridView
-            Catch ex As Exception
-                MessageBox.Show("Error: " & ex.Message)
-            Finally
-                con.Close()
-            End Try
+            ' Refresh DataGridView
+            DataGridView1.Refresh()
         Else
-            MessageBox.Show("Please select a patient to delete.")
+            MessageBox.Show("Please select a row to delete.")
         End If
     End Sub
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
         If DataGridView1.SelectedRows.Count > 0 Then
-            Dim selectedID As Integer = Convert.ToInt32(DataGridView1.SelectedRows(0).Cells("PatientID").Value)
+            Dim rowIndex As Integer = DataGridView1.SelectedRows(0).Index
+            dtPatients.Rows(rowIndex)("PatientID") = txtID.Text
+            dtPatients.Rows(rowIndex)("PatientName") = txtName.Text
+            dtPatients.Rows(rowIndex)("DateOfBirth") = dtpDOB.Value
+            dtPatients.Rows(rowIndex)("Contact") = txtContact.Text
+            dtPatients.Rows(rowIndex)("Gender") = cmbGender.SelectedItem.ToString()
+            dtPatients.Rows(rowIndex)("Address") = txtAddress.Text
 
-            Dim name As String = txtName.Text
-            Dim dob As Date = dtpDOB.Value
-            Dim contact As String = txtContact.Text
-            Dim gender As String = cmbGender.SelectedItem.ToString()
+            ' Save changes to database
+            adapter.Update(dtPatients)
 
-            Dim query As String = "UPDATE Patients SET Name=@Name, DOB=@DOB, Contact=@Contact, Gender=@Gender WHERE PatientID=@PatientID"
-            Dim cmd As New SqlCommand(query, con)
-
-            cmd.Parameters.AddWithValue("@Name", name)
-            cmd.Parameters.AddWithValue("@DOB", dob)
-            cmd.Parameters.AddWithValue("@Contact", contact)
-            cmd.Parameters.AddWithValue("@Gender", gender)
-            cmd.Parameters.AddWithValue("@PatientID", selectedID)
-
-            Try
-                con.Open()
-                cmd.ExecuteNonQuery()
-                MessageBox.Show("Patient Updated Successfully!")
-                LoadPatients() ' Refresh DataGridView
-            Catch ex As Exception
-                MessageBox.Show("Error: " & ex.Message)
-            Finally
-                con.Close()
-            End Try
+            ' Refresh DataGridView
+            DataGridView1.Refresh()
         Else
-            MessageBox.Show("Please select a patient to update.")
+            MessageBox.Show("Please select a row to update.")
         End If
     End Sub
 

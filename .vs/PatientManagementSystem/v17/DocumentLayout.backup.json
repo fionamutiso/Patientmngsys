@@ -3,11 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|c:\\users\\user\\desktop\\patientmanagementsystem\\patientmanagementsystem\\appointmentsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|C:\\Users\\User\\Desktop\\PatientManagementSystem\\patientmanagementsystem\\appointmentsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\appointmentsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|c:\\users\\user\\desktop\\patientmanagementsystem\\patientmanagementsystem\\patientsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|c:\\users\\user\\desktop\\patientmanagementsystem\\patientmanagementsystem\\patientmngsysdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\patientmngsysdataset.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\x03xhqis..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|C:\\Users\\User\\Desktop\\PatientManagementSystem\\patientmanagementsystem\\patientsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\patientsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
@@ -15,12 +22,8 @@
       "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\appointmentsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|C:\\Users\\User\\Desktop\\PatientManagementSystem\\patientmanagementsystem\\doctorsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\doctorsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|C:\\Users\\User\\Desktop\\PatientManagementSystem\\patientmanagementsystem\\billingform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\billingform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|c:\\users\\user\\desktop\\patientmanagementsystem\\patientmanagementsystem\\patientsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\patientsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|C:\\Users\\User\\Desktop\\PatientManagementSystem\\patientmanagementsystem\\doctorsform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -31,8 +34,18 @@
       "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|C:\\Users\\User\\Desktop\\PatientManagementSystem\\patientmanagementsystem\\billingform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\billingform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|C:\\Users\\User\\Desktop\\PatientManagementSystem\\patientmanagementsystem\\mainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{CFF11385-98FB-43F9-BA38-EECE9D266B2B}|PatientManagementSystem\\PatientManagementSystem.vbproj|solutionrelative:patientmanagementsystem\\mainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\x03xhqis..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\x03xhqis..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +55,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +67,55 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientmngsysDataSet.xsd",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\PatientmngsysDataSet.xsd",
+              "RelativeDocumentMoniker": "PatientManagementSystem\\PatientmngsysDataSet.xsd",
+              "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\PatientmngsysDataSet.xsd",
+              "RelativeToolTip": "PatientManagementSystem\\PatientmngsysDataSet.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2025-04-03T21:31:21.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SQLQuery1.sql ",
+              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\x03xhqis..sql",
+              "RelativeDocumentMoniker": "..\\..\\AppData\\Local\\Temp\\x03xhqis..sql",
+              "ToolTip": "SQLQuery1.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-03T21:07:23.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AppointmentsForm.vb",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\AppointmentsForm.vb",
               "RelativeDocumentMoniker": "PatientManagementSystem\\AppointmentsForm.vb",
-              "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\AppointmentsForm.vb",
-              "RelativeToolTip": "PatientManagementSystem\\AppointmentsForm.vb",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwCkAAAAoAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\AppointmentsForm.vb*",
+              "RelativeToolTip": "PatientManagementSystem\\AppointmentsForm.vb*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-04-03T09:13:43.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "AppointmentsForm.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\AppointmentsForm.vb",
+              "RelativeDocumentMoniker": "PatientManagementSystem\\AppointmentsForm.vb",
+              "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\AppointmentsForm.vb [Design]*",
+              "RelativeToolTip": "PatientManagementSystem\\AppointmentsForm.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-04-02T12:40:54.964Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PatientsForm.vb [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\PatientsForm.vb",
               "RelativeDocumentMoniker": "PatientManagementSystem\\PatientsForm.vb",
@@ -79,76 +127,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DoctorsForm.vb",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\DoctorsForm.vb",
-              "RelativeDocumentMoniker": "PatientManagementSystem\\DoctorsForm.vb",
-              "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\DoctorsForm.vb",
-              "RelativeToolTip": "PatientManagementSystem\\DoctorsForm.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "PatientsForm.vb",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\PatientsForm.vb",
+              "RelativeDocumentMoniker": "PatientManagementSystem\\PatientsForm.vb",
+              "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\PatientsForm.vb",
+              "RelativeToolTip": "PatientManagementSystem\\PatientsForm.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-03T06:46:46.536Z",
+              "WhenOpened": "2025-04-03T20:52:48.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MainMenu.vb [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\MainMenu.vb",
               "RelativeDocumentMoniker": "PatientManagementSystem\\MainMenu.vb",
               "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\MainMenu.vb [Design]",
               "RelativeToolTip": "PatientManagementSystem\\MainMenu.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-02T12:41:06.4Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-02T12:41:06.4Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "LoginForm.vb [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\LoginForm.vb",
               "RelativeDocumentMoniker": "PatientManagementSystem\\LoginForm.vb",
               "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\LoginForm.vb [Design]",
               "RelativeToolTip": "PatientManagementSystem\\LoginForm.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-02T12:41:05.081Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-02T12:41:05.081Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DoctorsForm.vb [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\DoctorsForm.vb",
               "RelativeDocumentMoniker": "PatientManagementSystem\\DoctorsForm.vb",
               "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\DoctorsForm.vb [Design]",
               "RelativeToolTip": "PatientManagementSystem\\DoctorsForm.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-02T12:40:59.275Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-02T12:40:59.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "BillingForm.vb [Design]",
               "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\BillingForm.vb",
               "RelativeDocumentMoniker": "PatientManagementSystem\\BillingForm.vb",
               "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\BillingForm.vb [Design]",
               "RelativeToolTip": "PatientManagementSystem\\BillingForm.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-02T12:40:57.914Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AppointmentsForm.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\AppointmentsForm.vb",
-              "RelativeDocumentMoniker": "PatientManagementSystem\\AppointmentsForm.vb",
-              "ToolTip": "C:\\Users\\User\\Desktop\\PatientManagementSystem\\PatientManagementSystem\\AppointmentsForm.vb [Design]",
-              "RelativeToolTip": "PatientManagementSystem\\AppointmentsForm.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-04-02T12:40:54.964Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-02T12:40:57.914Z"
             }
           ]
         }

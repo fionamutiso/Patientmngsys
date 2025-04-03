@@ -53,6 +53,17 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=HP-ZBOOK\SQLEXPRESS;Initial Catalog=Patientmngsys;Integrated Security"& _ 
+            "=True;TrustServerCertificate=True")>  _
+        Public ReadOnly Property PatientmngsysConnectionString() As String
+            Get
+                Return CType(Me("PatientmngsysConnectionString"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 
