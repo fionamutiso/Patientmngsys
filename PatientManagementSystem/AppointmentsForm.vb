@@ -4,14 +4,17 @@ Public Class AppointmentsForm
     Dim dtAppointments As New DataTable()
     Dim adapter As SqlDataAdapter
     Dim connection As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
-
+    Dim con As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
+    Dim txtAppointmentID As New TextBox()
+    Dim txtPatientId As New TextBox()
     Dim txtDoctorName As New TextBox()
     Dim dtpAppointmentDate As New DateTimePicker()
     Dim DataGridView1 As New DataGridView()
 
     Private Sub btnAdd_Click(sender As System.Object, e As System.EventArgs) Handles btnAdd.Click
         Dim newRow As DataRow = dtAppointments.NewRow()
-        newRow("PatientName") = txtPatientName.Text
+        newRow("AppointmentID") = txtAppointmentID.Text
+        newRow("PatientID") = txtPatientID.Text
         newRow("DoctorName") = txtDoctorName.Text
         newRow("AppointmentDate") = dtpAppointmentDate.Value
         dtAppointments.Rows.Add(newRow)

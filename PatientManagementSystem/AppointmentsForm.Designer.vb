@@ -24,12 +24,10 @@ Partial Class AppointmentsForm
     Private Sub InitializeComponent()
         Me.lblPatientName = New System.Windows.Forms.Label()
         Me.lblDate = New System.Windows.Forms.Label()
-        Me.lblTime = New System.Windows.Forms.Label()
         Me.lblDoctor = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.txtPatientName = New System.Windows.Forms.TextBox()
-        Me.dtpTime = New System.Windows.Forms.DateTimePicker()
         Me.dtpDate = New System.Windows.Forms.DateTimePicker()
         Me.cmbDoctorName = New System.Windows.Forms.ComboBox()
         Me.btnUpdate = New System.Windows.Forms.Button()
@@ -56,16 +54,6 @@ Partial Class AppointmentsForm
         Me.lblDate.Size = New System.Drawing.Size(33, 13)
         Me.lblDate.TabIndex = 1
         Me.lblDate.Text = "Date:"
-        '
-        'lblTime
-        '
-        Me.lblTime.AutoSize = True
-        Me.lblTime.Location = New System.Drawing.Point(11, 173)
-        Me.lblTime.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblTime.Name = "lblTime"
-        Me.lblTime.Size = New System.Drawing.Size(33, 13)
-        Me.lblTime.TabIndex = 2
-        Me.lblTime.Text = "Time:"
         '
         'lblDoctor
         '
@@ -106,15 +94,6 @@ Partial Class AppointmentsForm
         Me.txtPatientName.Name = "txtPatientName"
         Me.txtPatientName.Size = New System.Drawing.Size(200, 20)
         Me.txtPatientName.TabIndex = 7
-        '
-        'dtpTime
-        '
-        Me.dtpTime.Format = System.Windows.Forms.DateTimePickerFormat.Time
-        Me.dtpTime.Location = New System.Drawing.Point(121, 173)
-        Me.dtpTime.Margin = New System.Windows.Forms.Padding(2)
-        Me.dtpTime.Name = "dtpTime"
-        Me.dtpTime.Size = New System.Drawing.Size(200, 20)
-        Me.dtpTime.TabIndex = 9
         '
         'dtpDate
         '
@@ -160,12 +139,10 @@ Partial Class AppointmentsForm
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.cmbDoctorName)
         Me.Controls.Add(Me.dtpDate)
-        Me.Controls.Add(Me.dtpTime)
         Me.Controls.Add(Me.txtPatientName)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.lblDoctor)
-        Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.lblDate)
         Me.Controls.Add(Me.lblPatientName)
         Me.Margin = New System.Windows.Forms.Padding(2)
@@ -178,12 +155,10 @@ Partial Class AppointmentsForm
     End Sub
     Friend WithEvents lblPatientName As System.Windows.Forms.Label
     Friend WithEvents lblDate As System.Windows.Forms.Label
-    Friend WithEvents lblTime As System.Windows.Forms.Label
     Friend WithEvents lblDoctor As System.Windows.Forms.Label
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents btnDelete As System.Windows.Forms.Button
     Friend WithEvents txtPatientName As System.Windows.Forms.TextBox
-    Friend WithEvents dtpTime As System.Windows.Forms.DateTimePicker
     Friend WithEvents dtpDate As System.Windows.Forms.DateTimePicker
     Friend WithEvents cmbDoctorName As System.Windows.Forms.ComboBox
     Friend WithEvents btnUpdate As Button
