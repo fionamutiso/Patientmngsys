@@ -26,12 +26,18 @@ Partial Class BillingForm
         Me.lblCost = New System.Windows.Forms.Label()
         Me.lblService = New System.Windows.Forms.Label()
         Me.lblPaymentStatus = New System.Windows.Forms.Label()
-        Me.txtPatientName = New System.Windows.Forms.TextBox()
-        Me.txtService = New System.Windows.Forms.TextBox()
-        Me.txtCost = New System.Windows.Forms.TextBox()
+        Me.txtPatientID = New System.Windows.Forms.TextBox()
+        Me.txtServiceReceived = New System.Windows.Forms.TextBox()
+        Me.txtAmount = New System.Windows.Forms.TextBox()
         Me.cmbPaymentStatus = New System.Windows.Forms.ComboBox()
-        Me.btnExit = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
+        Me.dgvBilling = New System.Windows.Forms.DataGridView()
+        Me.dtpBillingDate = New System.Windows.Forms.DateTimePicker()
+        Me.txtBillID = New System.Windows.Forms.TextBox()
+        CType(Me.dgvBilling, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblPatientName
@@ -74,79 +80,126 @@ Partial Class BillingForm
         Me.lblPaymentStatus.TabIndex = 3
         Me.lblPaymentStatus.Text = "Payment Status:"
         '
-        'txtPatientName
+        'txtPatientID
         '
-        Me.txtPatientName.Location = New System.Drawing.Point(157, 51)
-        Me.txtPatientName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.txtPatientName.Name = "txtPatientName"
-        Me.txtPatientName.Size = New System.Drawing.Size(200, 20)
-        Me.txtPatientName.TabIndex = 4
+        Me.txtPatientID.Location = New System.Drawing.Point(157, 51)
+        Me.txtPatientID.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtPatientID.Name = "txtPatientID"
+        Me.txtPatientID.Size = New System.Drawing.Size(200, 20)
+        Me.txtPatientID.TabIndex = 4
         '
-        'txtService
+        'txtServiceReceived
         '
-        Me.txtService.Location = New System.Drawing.Point(157, 97)
-        Me.txtService.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.txtService.Name = "txtService"
-        Me.txtService.Size = New System.Drawing.Size(200, 20)
-        Me.txtService.TabIndex = 5
+        Me.txtServiceReceived.Location = New System.Drawing.Point(157, 97)
+        Me.txtServiceReceived.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtServiceReceived.Name = "txtServiceReceived"
+        Me.txtServiceReceived.Size = New System.Drawing.Size(200, 20)
+        Me.txtServiceReceived.TabIndex = 5
         '
-        'txtCost
+        'txtAmount
         '
-        Me.txtCost.Location = New System.Drawing.Point(157, 147)
-        Me.txtCost.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.txtCost.Name = "txtCost"
-        Me.txtCost.Size = New System.Drawing.Size(200, 20)
-        Me.txtCost.TabIndex = 6
+        Me.txtAmount.Location = New System.Drawing.Point(157, 147)
+        Me.txtAmount.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtAmount.Name = "txtAmount"
+        Me.txtAmount.Size = New System.Drawing.Size(200, 20)
+        Me.txtAmount.TabIndex = 6
         '
         'cmbPaymentStatus
         '
         Me.cmbPaymentStatus.FormattingEnabled = True
         Me.cmbPaymentStatus.Location = New System.Drawing.Point(157, 190)
-        Me.cmbPaymentStatus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.cmbPaymentStatus.Margin = New System.Windows.Forms.Padding(2)
         Me.cmbPaymentStatus.Name = "cmbPaymentStatus"
         Me.cmbPaymentStatus.Size = New System.Drawing.Size(200, 21)
         Me.cmbPaymentStatus.TabIndex = 7
         '
-        'btnExit
+        'btnCancel
         '
-        Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnExit.Location = New System.Drawing.Point(288, 243)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(100, 25)
-        Me.btnExit.TabIndex = 8
-        Me.btnExit.Text = "Exit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Location = New System.Drawing.Point(261, 333)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(100, 25)
+        Me.btnCancel.TabIndex = 8
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = True
         '
         'btnAdd
         '
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(157, 243)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnAdd.Location = New System.Drawing.Point(157, 333)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(100, 25)
         Me.btnAdd.TabIndex = 10
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
+        'btnUpdate
+        '
+        Me.btnUpdate.Location = New System.Drawing.Point(411, 333)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.TabIndex = 11
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Location = New System.Drawing.Point(658, 333)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelete.TabIndex = 12
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
+        'dgvBilling
+        '
+        Me.dgvBilling.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvBilling.Location = New System.Drawing.Point(411, 51)
+        Me.dgvBilling.Name = "dgvBilling"
+        Me.dgvBilling.Size = New System.Drawing.Size(322, 232)
+        Me.dgvBilling.TabIndex = 13
+        '
+        'dtpBillingDate
+        '
+        Me.dtpBillingDate.Location = New System.Drawing.Point(157, 245)
+        Me.dtpBillingDate.Name = "dtpBillingDate"
+        Me.dtpBillingDate.Size = New System.Drawing.Size(200, 20)
+        Me.dtpBillingDate.TabIndex = 14
+        '
+        'txtBillID
+        '
+        Me.txtBillID.Location = New System.Drawing.Point(157, 292)
+        Me.txtBillID.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtBillID.Name = "txtBillID"
+        Me.txtBillID.Size = New System.Drawing.Size(200, 20)
+        Me.txtBillID.TabIndex = 15
+        '
         'BillingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(556, 317)
+        Me.ClientSize = New System.Drawing.Size(768, 413)
+        Me.Controls.Add(Me.txtBillID)
+        Me.Controls.Add(Me.dtpBillingDate)
+        Me.Controls.Add(Me.dgvBilling)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.cmbPaymentStatus)
-        Me.Controls.Add(Me.txtCost)
-        Me.Controls.Add(Me.txtService)
-        Me.Controls.Add(Me.txtPatientName)
+        Me.Controls.Add(Me.txtAmount)
+        Me.Controls.Add(Me.txtServiceReceived)
+        Me.Controls.Add(Me.txtPatientID)
         Me.Controls.Add(Me.lblPaymentStatus)
         Me.Controls.Add(Me.lblService)
         Me.Controls.Add(Me.lblCost)
         Me.Controls.Add(Me.lblPatientName)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "BillingForm"
         Me.Text = "BillingForm"
+        CType(Me.dgvBilling, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -155,10 +208,15 @@ Partial Class BillingForm
     Friend WithEvents lblCost As System.Windows.Forms.Label
     Friend WithEvents lblService As System.Windows.Forms.Label
     Friend WithEvents lblPaymentStatus As System.Windows.Forms.Label
-    Friend WithEvents txtPatientName As System.Windows.Forms.TextBox
-    Friend WithEvents txtService As System.Windows.Forms.TextBox
-    Friend WithEvents txtCost As System.Windows.Forms.TextBox
+    Friend WithEvents txtPatientID As System.Windows.Forms.TextBox
+    Friend WithEvents txtServiceReceived As System.Windows.Forms.TextBox
+    Friend WithEvents txtAmount As System.Windows.Forms.TextBox
     Friend WithEvents cmbPaymentStatus As System.Windows.Forms.ComboBox
-    Friend WithEvents btnExit As System.Windows.Forms.Button
+    Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents dgvBilling As DataGridView
+    Friend WithEvents dtpBillingDate As DateTimePicker
+    Friend WithEvents txtBillID As TextBox
 End Class

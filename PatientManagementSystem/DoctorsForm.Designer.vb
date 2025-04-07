@@ -29,12 +29,12 @@ Partial Class DoctorsForm
         Me.txtDoctorName = New System.Windows.Forms.TextBox()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.doctorsDataGridView = New System.Windows.Forms.DataGridView()
+        Me.dgvDoctors = New System.Windows.Forms.DataGridView()
         Me.btnUpdate = New System.Windows.Forms.Button()
-        Me.cmbSpecialty = New System.Windows.Forms.ComboBox()
         Me.txtDoctorID = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        CType(Me.doctorsDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.txtSpecialty = New System.Windows.Forms.TextBox()
+        CType(Me.dgvDoctors, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblDoctorName
@@ -105,13 +105,13 @@ Partial Class DoctorsForm
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'doctorsDataGridView
+        'dgvDoctors
         '
-        Me.doctorsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.doctorsDataGridView.Location = New System.Drawing.Point(350, 63)
-        Me.doctorsDataGridView.Name = "doctorsDataGridView"
-        Me.doctorsDataGridView.Size = New System.Drawing.Size(240, 226)
-        Me.doctorsDataGridView.TabIndex = 8
+        Me.dgvDoctors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvDoctors.Location = New System.Drawing.Point(350, 63)
+        Me.dgvDoctors.Name = "dgvDoctors"
+        Me.dgvDoctors.Size = New System.Drawing.Size(240, 226)
+        Me.dgvDoctors.TabIndex = 8
         '
         'btnUpdate
         '
@@ -121,14 +121,6 @@ Partial Class DoctorsForm
         Me.btnUpdate.TabIndex = 9
         Me.btnUpdate.Text = "Update"
         Me.btnUpdate.UseVisualStyleBackColor = True
-        '
-        'cmbSpecialty
-        '
-        Me.cmbSpecialty.FormattingEnabled = True
-        Me.cmbSpecialty.Location = New System.Drawing.Point(122, 108)
-        Me.cmbSpecialty.Name = "cmbSpecialty"
-        Me.cmbSpecialty.Size = New System.Drawing.Size(200, 21)
-        Me.cmbSpecialty.TabIndex = 10
         '
         'txtDoctorID
         '
@@ -146,16 +138,23 @@ Partial Class DoctorsForm
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "DoctorID"
         '
+        'txtSpecialty
+        '
+        Me.txtSpecialty.Location = New System.Drawing.Point(122, 105)
+        Me.txtSpecialty.Name = "txtSpecialty"
+        Me.txtSpecialty.Size = New System.Drawing.Size(200, 20)
+        Me.txtSpecialty.TabIndex = 13
+        '
         'DoctorsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(622, 360)
+        Me.Controls.Add(Me.txtSpecialty)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtDoctorID)
-        Me.Controls.Add(Me.cmbSpecialty)
         Me.Controls.Add(Me.btnUpdate)
-        Me.Controls.Add(Me.doctorsDataGridView)
+        Me.Controls.Add(Me.dgvDoctors)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.txtDoctorName)
@@ -166,7 +165,7 @@ Partial Class DoctorsForm
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "DoctorsForm"
         Me.Text = "DoctorsForm"
-        CType(Me.doctorsDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvDoctors, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -178,9 +177,9 @@ Partial Class DoctorsForm
     Friend WithEvents txtDoctorName As System.Windows.Forms.TextBox
     Friend WithEvents btnDelete As System.Windows.Forms.Button
     Friend WithEvents btnAdd As System.Windows.Forms.Button
-    Friend WithEvents doctorsDataGridView As DataGridView
+    Friend WithEvents dgvDoctors As DataGridView
     Friend WithEvents btnUpdate As Button
-    Friend WithEvents cmbSpecialty As ComboBox
     Friend WithEvents txtDoctorID As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents txtSpecialty As TextBox
 End Class

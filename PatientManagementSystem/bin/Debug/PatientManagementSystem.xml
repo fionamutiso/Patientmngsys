@@ -1,0 +1,151 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PatientManagementSystem
+</name>
+</assembly>
+<members>
+<member name="T:PatientManagementSystem.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PatientManagementSystem.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PatientManagementSystem.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.AppointmentsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.BillingDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.DoctorsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.PatientsDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.AppointmentsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.BillingRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.DoctorsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.PatientsRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.AppointmentsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.BillingRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.DoctorsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSet.PatientsRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSetTableAdapters.AppointmentsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSetTableAdapters.BillingTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSetTableAdapters.DoctorsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSetTableAdapters.PatientsTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:PatientManagementSystem.PatientmngsysDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(PatientManagementSystem.PatientmngsysDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:PatientManagementSystem.PatientmngsysDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(PatientManagementSystem.PatientmngsysDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:PatientManagementSystem.PatientmngsysDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(PatientManagementSystem.PatientmngsysDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:PatientManagementSystem.PatientmngsysDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:PatientManagementSystem.PatientmngsysDataSetTableAdapters.TableAdapterManager.UpdateAll(PatientManagementSystem.PatientmngsysDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:PatientManagementSystem.PatientmngsysDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

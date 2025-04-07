@@ -36,3 +36,4 @@ C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\De
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.exe
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.xml
 C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\obj\x86\Debug\PatientManagementSystem.pdb
+C:\Users\User\Desktop\PatientManagementSystem\PatientManagementSystem\bin\Debug\PatientManagementSystem.xml

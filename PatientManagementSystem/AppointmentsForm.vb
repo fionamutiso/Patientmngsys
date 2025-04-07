@@ -5,72 +5,68 @@ Public Class AppointmentsForm
     Dim adapter As SqlDataAdapter
     Dim connection As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
     Dim con As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
-    Dim txtAppointmentID As New TextBox()
-    Dim txtPatientId As New TextBox()
-    Dim txtDoctorName As New TextBox()
-    Dim dtpAppointmentDate As New DateTimePicker()
-    Dim DataGridView1 As New DataGridView()
 
     Private Sub btnAdd_Click(sender As System.Object, e As System.EventArgs) Handles btnAdd.Click
-        Dim newRow As DataRow = dtAppointments.NewRow()
-        newRow("AppointmentID") = txtAppointmentID.Text
-        newRow("PatientID") = txtPatientID.Text
-        newRow("DoctorName") = txtDoctorName.Text
-        newRow("AppointmentDate") = dtpAppointmentDate.Value
-        dtAppointments.Rows.Add(newRow)
+        Using connection As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
+            Dim command As New SqlCommand("INSERT INTO Appointments (PatientID, DoctorID, AppointmentDate, Status, Notes) VALUES (@PatientID, @DoctorID, @AppointmentDate, @Status, @Notes)", connection)
+            command.Parameters.AddWithValue("@PatientID", CInt(txtPatientID.Text))
+            command.Parameters.AddWithValue("@DoctorID", CInt(txtDoctorID.Text))
+            command.Parameters.AddWithValue("@AppointmentDate", dtpAppointmentDate.Value)
+            command.Parameters.AddWithValue("@Status", cmbStatus.SelectedItem.ToString())
 
-        ' Save changes to database
-        adapter.Update(dtAppointments)
-
-        ' Refresh DataGridView
-        DataGridView1.Refresh()
+            connection.Open()
+            command.ExecuteNonQuery()
+            MessageBox.Show("Appointment added successfully!")
+        End Using
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        If DataGridView1.SelectedRows.Count > 0 Then
-            Dim rowIndex As Integer = DataGridView1.SelectedRows(0).Index
-            dtAppointments.Rows(rowIndex)("PatientName") = txtPatientName.Text
-            dtAppointments.Rows(rowIndex)("DoctorName") = txtDoctorName.Text
-            dtAppointments.Rows(rowIndex)("AppointmentDate") = dtpAppointmentDate.Value
+        Using connection As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
+            Dim command As New SqlCommand("UPDATE Appointments SET DoctorID = @DoctorID, AppointmentDate = @AppointmentDate, Status = @Status, Notes = @Notes WHERE AppointmentID = @AppointmentID", connection)
+            command.Parameters.AddWithValue("@AppointmentID", CInt(txtAppointmentID.Text))
+            command.Parameters.AddWithValue("@DoctorID", CInt(txtDoctorID.Text))
+            command.Parameters.AddWithValue("@AppointmentDate", dtpAppointmentDate.Value)
+            command.Parameters.AddWithValue("@Status", cmbStatus.SelectedItem.ToString())
 
-            ' Save changes
-            adapter.Update(dtAppointments)
 
-            ' Refresh DataGridView
-            DataGridView1.Refresh()
-        Else
-            MessageBox.Show("Please select a row to update.")
-        End If
+            connection.Open()
+            Dim rowsAffected As Integer = command.ExecuteNonQuery()
+            If rowsAffected > 0 Then
+                MessageBox.Show("Appointment updated successfully!")
+            Else
+                MessageBox.Show("Appointment not found.")
+            End If
+        End Using
     End Sub
 
 
     Private Sub btnDelete_Click(sender As System.Object, e As System.EventArgs) Handles btnDelete.Click
-        If DataGridView1.SelectedRows.Count > 0 Then
-            Dim rowIndex As Integer = DataGridView1.SelectedRows(0).Index
-            dtAppointments.Rows(rowIndex).Delete()
+        Using connection As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
+            Dim command As New SqlCommand("DELETE FROM Appointments WHERE AppointmentID = @AppointmentID", connection)
+            command.Parameters.AddWithValue("@AppointmentID", CInt(txtAppointmentID.Text))
 
-            ' Save changes
-            adapter.Update(dtAppointments)
-
-            ' Refresh DataGridView
-            DataGridView1.Refresh()
-        Else
-            MessageBox.Show("Please select a row to delete.")
-        End If
+            connection.Open()
+            Dim rowsAffected As Integer = command.ExecuteNonQuery()
+            If rowsAffected > 0 Then
+                MessageBox.Show("Appointment deleted successfully!")
+            Else
+                MessageBox.Show("Appointment not found.")
+            End If
+        End Using
     End Sub
 
     Private Sub AppointmentsForm_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         LoadAppointments()
     End Sub
     Private Sub LoadAppointments()
-        Dim query As String = "SELECT * FROM Appointments"
-        adapter = New SqlDataAdapter(query, connection)
-        Dim commandBuilder As New SqlCommandBuilder(adapter)
+        Using connection As New SqlConnection("Server=HP-ZBOOK\SQLEXPRESS; Database=Patientmngsys; Integrated Security=True;")
+            Dim command As New SqlCommand("SELECT * FROM Appointments", connection)
+            Dim adapter As New SqlDataAdapter(command)
+            Dim table As New DataTable()
 
-        dtAppointments.Clear()
-        adapter.Fill(dtAppointments)
-
-        ' Bind the DataTable to the DataGridView
-        DataGridView1.DataSource = dtAppointments
+            connection.Open()
+            adapter.Fill(table)
+            dgvAppointments.DataSource = table
+        End Using
     End Sub
 End Class
