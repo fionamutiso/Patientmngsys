@@ -34,6 +34,9 @@ Partial Class AppointmentsForm
         Me.txtDoctorID = New System.Windows.Forms.TextBox()
         Me.txtAppointmentID = New System.Windows.Forms.TextBox()
         Me.cmbStatus = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnCancel = New System.Windows.Forms.Button()
         CType(Me.dgvAppointments, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,9 +46,9 @@ Partial Class AppointmentsForm
         Me.lblPatientName.Location = New System.Drawing.Point(11, 55)
         Me.lblPatientName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPatientName.Name = "lblPatientName"
-        Me.lblPatientName.Size = New System.Drawing.Size(74, 13)
+        Me.lblPatientName.Size = New System.Drawing.Size(51, 13)
         Me.lblPatientName.TabIndex = 0
-        Me.lblPatientName.Text = "Patient Name:"
+        Me.lblPatientName.Text = "PatientID"
         '
         'lblDate
         '
@@ -53,9 +56,9 @@ Partial Class AppointmentsForm
         Me.lblDate.Location = New System.Drawing.Point(11, 130)
         Me.lblDate.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(33, 13)
+        Me.lblDate.Size = New System.Drawing.Size(92, 13)
         Me.lblDate.TabIndex = 1
-        Me.lblDate.Text = "Date:"
+        Me.lblDate.Text = "Appointment Date"
         '
         'lblDoctor
         '
@@ -63,31 +66,37 @@ Partial Class AppointmentsForm
         Me.lblDoctor.Location = New System.Drawing.Point(11, 91)
         Me.lblDoctor.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblDoctor.Name = "lblDoctor"
-        Me.lblDoctor.Size = New System.Drawing.Size(42, 13)
+        Me.lblDoctor.Size = New System.Drawing.Size(50, 13)
         Me.lblDoctor.TabIndex = 3
-        Me.lblDoctor.Text = "Doctor:"
+        Me.lblDoctor.Text = "DoctorID"
         '
         'btnAdd
         '
-        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(221, 250)
+        Me.btnAdd.BackColor = System.Drawing.Color.DeepPink
+        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdd.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.ForeColor = System.Drawing.Color.White
+        Me.btnAdd.Location = New System.Drawing.Point(221, 382)
         Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(100, 25)
         Me.btnAdd.TabIndex = 4
         Me.btnAdd.Text = "Add"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.btnAdd.UseVisualStyleBackColor = False
         '
         'btnDelete
         '
-        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.Location = New System.Drawing.Point(490, 280)
+        Me.btnDelete.BackColor = System.Drawing.Color.DeepPink
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelete.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.ForeColor = System.Drawing.Color.White
+        Me.btnDelete.Location = New System.Drawing.Point(523, 382)
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(100, 25)
         Me.btnDelete.TabIndex = 6
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'txtPatientID
         '
@@ -108,19 +117,25 @@ Partial Class AppointmentsForm
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(349, 282)
+        Me.btnUpdate.BackColor = System.Drawing.Color.DeepPink
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdate.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(395, 382)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.Size = New System.Drawing.Size(100, 25)
         Me.btnUpdate.TabIndex = 12
         Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = True
+        Me.btnUpdate.UseVisualStyleBackColor = False
         '
         'dgvAppointments
         '
+        Me.dgvAppointments.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.dgvAppointments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvAppointments.Location = New System.Drawing.Point(349, 43)
+        Me.dgvAppointments.GridColor = System.Drawing.Color.Silver
+        Me.dgvAppointments.Location = New System.Drawing.Point(395, 55)
         Me.dgvAppointments.Name = "dgvAppointments"
-        Me.dgvAppointments.Size = New System.Drawing.Size(240, 232)
+        Me.dgvAppointments.Size = New System.Drawing.Size(325, 295)
         Me.dgvAppointments.TabIndex = 13
         '
         'txtDoctorID
@@ -142,16 +157,52 @@ Partial Class AppointmentsForm
         'cmbStatus
         '
         Me.cmbStatus.FormattingEnabled = True
+        Me.cmbStatus.Items.AddRange(New Object() {"Cancelled", "Schedualed", "Completed"})
         Me.cmbStatus.Location = New System.Drawing.Point(121, 211)
         Me.cmbStatus.Name = "cmbStatus"
         Me.cmbStatus.Size = New System.Drawing.Size(200, 21)
         Me.cmbStatus.TabIndex = 16
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 177)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(77, 13)
+        Me.Label1.TabIndex = 17
+        Me.Label1.Text = "AppointmentID"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(11, 219)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(37, 13)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "Status"
+        '
+        'btnCancel
+        '
+        Me.btnCancel.BackColor = System.Drawing.Color.DeepPink
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.Color.White
+        Me.btnCancel.Location = New System.Drawing.Point(656, 382)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(100, 25)
+        Me.btnCancel.TabIndex = 19
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = False
+        '
         'AppointmentsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(601, 338)
+        Me.BackColor = System.Drawing.Color.LightPink
+        Me.ClientSize = New System.Drawing.Size(769, 416)
+        Me.Controls.Add(Me.btnCancel)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cmbStatus)
         Me.Controls.Add(Me.txtAppointmentID)
         Me.Controls.Add(Me.txtDoctorID)
@@ -184,4 +235,7 @@ Partial Class AppointmentsForm
     Friend WithEvents txtDoctorID As TextBox
     Friend WithEvents txtAppointmentID As TextBox
     Friend WithEvents cmbStatus As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents btnCancel As Button
 End Class

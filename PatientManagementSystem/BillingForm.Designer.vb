@@ -37,43 +37,45 @@ Partial Class BillingForm
         Me.dgvBilling = New System.Windows.Forms.DataGridView()
         Me.dtpBillingDate = New System.Windows.Forms.DateTimePicker()
         Me.txtBillID = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.dgvBilling, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblPatientName
         '
         Me.lblPatientName.AutoSize = True
-        Me.lblPatientName.Location = New System.Drawing.Point(40, 51)
+        Me.lblPatientName.Location = New System.Drawing.Point(12, 58)
         Me.lblPatientName.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPatientName.Name = "lblPatientName"
-        Me.lblPatientName.Size = New System.Drawing.Size(74, 13)
+        Me.lblPatientName.Size = New System.Drawing.Size(51, 13)
         Me.lblPatientName.TabIndex = 0
-        Me.lblPatientName.Text = "Patient Name:"
+        Me.lblPatientName.Text = "PatientID"
         '
         'lblCost
         '
         Me.lblCost.AutoSize = True
-        Me.lblCost.Location = New System.Drawing.Point(40, 147)
+        Me.lblCost.Location = New System.Drawing.Point(12, 154)
         Me.lblCost.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblCost.Name = "lblCost"
-        Me.lblCost.Size = New System.Drawing.Size(31, 13)
+        Me.lblCost.Size = New System.Drawing.Size(43, 13)
         Me.lblCost.TabIndex = 1
-        Me.lblCost.Text = "Cost:"
+        Me.lblCost.Text = "Amount"
         '
         'lblService
         '
         Me.lblService.AutoSize = True
-        Me.lblService.Location = New System.Drawing.Point(40, 97)
+        Me.lblService.Location = New System.Drawing.Point(12, 104)
         Me.lblService.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblService.Name = "lblService"
-        Me.lblService.Size = New System.Drawing.Size(46, 13)
+        Me.lblService.Size = New System.Drawing.Size(92, 13)
         Me.lblService.TabIndex = 2
-        Me.lblService.Text = "Service:"
+        Me.lblService.Text = "Service Received"
         '
         'lblPaymentStatus
         '
         Me.lblPaymentStatus.AutoSize = True
-        Me.lblPaymentStatus.Location = New System.Drawing.Point(40, 196)
+        Me.lblPaymentStatus.Location = New System.Drawing.Point(12, 198)
         Me.lblPaymentStatus.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPaymentStatus.Name = "lblPaymentStatus"
         Me.lblPaymentStatus.Size = New System.Drawing.Size(84, 13)
@@ -115,50 +117,65 @@ Partial Class BillingForm
         '
         'btnCancel
         '
-        Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(261, 333)
+        Me.btnCancel.BackColor = System.Drawing.Color.DeepPink
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.Color.White
+        Me.btnCancel.Location = New System.Drawing.Point(657, 378)
         Me.btnCancel.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(100, 25)
         Me.btnCancel.TabIndex = 8
         Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = True
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
         'btnAdd
         '
-        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(157, 333)
+        Me.btnAdd.BackColor = System.Drawing.Color.DeepPink
+        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdd.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.ForeColor = System.Drawing.Color.White
+        Me.btnAdd.Location = New System.Drawing.Point(257, 379)
         Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(100, 25)
         Me.btnAdd.TabIndex = 10
         Me.btnAdd.Text = "Add"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.btnAdd.UseVisualStyleBackColor = False
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(411, 333)
+        Me.btnUpdate.BackColor = System.Drawing.Color.DeepPink
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdate.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(411, 379)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.Size = New System.Drawing.Size(100, 25)
         Me.btnUpdate.TabIndex = 11
         Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = True
+        Me.btnUpdate.UseVisualStyleBackColor = False
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(658, 333)
+        Me.btnDelete.BackColor = System.Drawing.Color.DeepPink
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelete.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.ForeColor = System.Drawing.Color.White
+        Me.btnDelete.Location = New System.Drawing.Point(533, 379)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelete.Size = New System.Drawing.Size(100, 25)
         Me.btnDelete.TabIndex = 12
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'dgvBilling
         '
+        Me.dgvBilling.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.dgvBilling.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvBilling.Location = New System.Drawing.Point(411, 51)
         Me.dgvBilling.Name = "dgvBilling"
-        Me.dgvBilling.Size = New System.Drawing.Size(322, 232)
+        Me.dgvBilling.Size = New System.Drawing.Size(325, 295)
         Me.dgvBilling.TabIndex = 13
         '
         'dtpBillingDate
@@ -176,11 +193,32 @@ Partial Class BillingForm
         Me.txtBillID.Size = New System.Drawing.Size(200, 20)
         Me.txtBillID.TabIndex = 15
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 245)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(60, 13)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "Billing Date"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(12, 292)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(31, 13)
+        Me.Label2.TabIndex = 17
+        Me.Label2.Text = "BillID"
+        '
         'BillingForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(768, 413)
+        Me.BackColor = System.Drawing.Color.LightPink
+        Me.ClientSize = New System.Drawing.Size(769, 416)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtBillID)
         Me.Controls.Add(Me.dtpBillingDate)
         Me.Controls.Add(Me.dgvBilling)
@@ -198,6 +236,7 @@ Partial Class BillingForm
         Me.Controls.Add(Me.lblPatientName)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "BillingForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BillingForm"
         CType(Me.dgvBilling, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -219,4 +258,6 @@ Partial Class BillingForm
     Friend WithEvents dgvBilling As DataGridView
     Friend WithEvents dtpBillingDate As DateTimePicker
     Friend WithEvents txtBillID As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class

@@ -31,53 +31,65 @@ Partial Class MainMenu
         '
         'btnAppointments
         '
-        Me.btnAppointments.Location = New System.Drawing.Point(171, 85)
+        Me.btnAppointments.BackColor = System.Drawing.Color.PaleVioletRed
+        Me.btnAppointments.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAppointments.Location = New System.Drawing.Point(169, 85)
         Me.btnAppointments.Name = "btnAppointments"
-        Me.btnAppointments.Size = New System.Drawing.Size(124, 37)
+        Me.btnAppointments.Size = New System.Drawing.Size(125, 40)
         Me.btnAppointments.TabIndex = 0
         Me.btnAppointments.Text = "Appointments "
-        Me.btnAppointments.UseVisualStyleBackColor = True
+        Me.btnAppointments.UseVisualStyleBackColor = False
         '
         'btnPatients
         '
-        Me.btnPatients.Location = New System.Drawing.Point(25, 85)
+        Me.btnPatients.BackColor = System.Drawing.Color.PaleVioletRed
+        Me.btnPatients.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnPatients.Location = New System.Drawing.Point(12, 85)
         Me.btnPatients.Name = "btnPatients"
-        Me.btnPatients.Size = New System.Drawing.Size(86, 37)
+        Me.btnPatients.Size = New System.Drawing.Size(125, 40)
         Me.btnPatients.TabIndex = 1
         Me.btnPatients.Text = "Patients"
-        Me.btnPatients.UseVisualStyleBackColor = True
+        Me.btnPatients.UseVisualStyleBackColor = False
         '
         'btnDoctors
         '
-        Me.btnDoctors.Location = New System.Drawing.Point(341, 85)
+        Me.btnDoctors.BackColor = System.Drawing.Color.PaleVioletRed
+        Me.btnDoctors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDoctors.Location = New System.Drawing.Point(323, 85)
         Me.btnDoctors.Name = "btnDoctors"
-        Me.btnDoctors.Size = New System.Drawing.Size(86, 37)
+        Me.btnDoctors.Size = New System.Drawing.Size(125, 40)
         Me.btnDoctors.TabIndex = 2
         Me.btnDoctors.Text = "Doctors"
-        Me.btnDoctors.UseVisualStyleBackColor = True
+        Me.btnDoctors.UseVisualStyleBackColor = False
         '
         'btnBilling
         '
+        Me.btnBilling.BackColor = System.Drawing.Color.PaleVioletRed
+        Me.btnBilling.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBilling.Location = New System.Drawing.Point(476, 85)
         Me.btnBilling.Name = "btnBilling"
-        Me.btnBilling.Size = New System.Drawing.Size(86, 37)
+        Me.btnBilling.Size = New System.Drawing.Size(125, 40)
         Me.btnBilling.TabIndex = 3
         Me.btnBilling.Text = "Billing"
-        Me.btnBilling.UseVisualStyleBackColor = True
+        Me.btnBilling.UseVisualStyleBackColor = False
         '
         'btnLogout
         '
-        Me.btnLogout.Location = New System.Drawing.Point(249, 175)
+        Me.btnLogout.BackColor = System.Drawing.Color.PaleVioletRed
+        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogout.Location = New System.Drawing.Point(227, 183)
         Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Size = New System.Drawing.Size(86, 37)
+        Me.btnLogout.Size = New System.Drawing.Size(125, 40)
         Me.btnLogout.TabIndex = 4
         Me.btnLogout.Text = "Logout"
-        Me.btnLogout.UseVisualStyleBackColor = True
+        Me.btnLogout.UseVisualStyleBackColor = False
         '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.PatientManagementSystem.My.Resources.Resources.dashboardbg
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(614, 276)
         Me.Controls.Add(Me.btnLogout)
         Me.Controls.Add(Me.btnBilling)
@@ -86,7 +98,7 @@ Partial Class MainMenu
         Me.Controls.Add(Me.btnAppointments)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "MainMenu"
-        Me.Text = "MainMenu"
+        Me.Text = "Dashboard"
         Me.ResumeLayout(False)
 
     End Sub

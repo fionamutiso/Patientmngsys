@@ -60,7 +60,7 @@ Partial Class LoginForm
         'txtUsername
         '
         Me.txtUsername.Location = New System.Drawing.Point(106, 36)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(2)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(166, 20)
         Me.txtUsername.TabIndex = 1
@@ -68,7 +68,7 @@ Partial Class LoginForm
         'txtPassword
         '
         Me.txtPassword.Location = New System.Drawing.Point(106, 82)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassword.Size = New System.Drawing.Size(166, 20)
@@ -77,7 +77,7 @@ Partial Class LoginForm
         'btnOK
         '
         Me.btnOK.Location = New System.Drawing.Point(148, 131)
-        Me.btnOK.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnOK.Margin = New System.Windows.Forms.Padding(2)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(70, 19)
         Me.btnOK.TabIndex = 4
@@ -87,7 +87,7 @@ Partial Class LoginForm
         '
         Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnCancel.Location = New System.Drawing.Point(225, 131)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(2)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(70, 19)
         Me.btnCancel.TabIndex = 5
@@ -98,6 +98,7 @@ Partial Class LoginForm
         Me.AcceptButton = Me.btnOK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LavenderBlush
         Me.CancelButton = Me.btnCancel
         Me.ClientSize = New System.Drawing.Size(301, 156)
         Me.Controls.Add(Me.btnCancel)
@@ -107,7 +108,7 @@ Partial Class LoginForm
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.lblUsername)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "LoginForm"

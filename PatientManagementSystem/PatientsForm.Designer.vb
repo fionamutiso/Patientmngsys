@@ -38,6 +38,7 @@ Partial Class frmPatients
         Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.txtID = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnCancel = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,23 +84,29 @@ Partial Class frmPatients
         '
         'PatientAdd
         '
-        Me.PatientAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PatientAdd.Location = New System.Drawing.Point(244, 374)
+        Me.PatientAdd.BackColor = System.Drawing.Color.DeepPink
+        Me.PatientAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.PatientAdd.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PatientAdd.ForeColor = System.Drawing.Color.White
+        Me.PatientAdd.Location = New System.Drawing.Point(244, 413)
         Me.PatientAdd.Name = "PatientAdd"
         Me.PatientAdd.Size = New System.Drawing.Size(100, 25)
         Me.PatientAdd.TabIndex = 4
         Me.PatientAdd.Text = "Add"
-        Me.PatientAdd.UseVisualStyleBackColor = True
+        Me.PatientAdd.UseVisualStyleBackColor = False
         '
         'btnUpdate
         '
-        Me.btnUpdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnUpdate.Location = New System.Drawing.Point(401, 383)
+        Me.btnUpdate.BackColor = System.Drawing.Color.DeepPink
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdate.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(401, 413)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(100, 25)
         Me.btnUpdate.TabIndex = 5
         Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = True
+        Me.btnUpdate.UseVisualStyleBackColor = False
         '
         'dtpDOB
         '
@@ -125,10 +132,12 @@ Partial Class frmPatients
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToOrderColumns = True
+        Me.DataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.GridColor = System.Drawing.Color.Silver
         Me.DataGridView1.Location = New System.Drawing.Point(401, 55)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(358, 305)
+        Me.DataGridView1.Size = New System.Drawing.Size(325, 295)
         Me.DataGridView1.TabIndex = 11
         '
         'cmbGender
@@ -142,13 +151,16 @@ Partial Class frmPatients
         '
         'btnDelete
         '
-        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.Location = New System.Drawing.Point(659, 383)
+        Me.btnDelete.BackColor = System.Drawing.Color.DeepPink
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelete.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.ForeColor = System.Drawing.Color.White
+        Me.btnDelete.Location = New System.Drawing.Point(533, 413)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(100, 25)
         Me.btnDelete.TabIndex = 13
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -184,11 +196,26 @@ Partial Class frmPatients
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "PatientID"
         '
+        'btnCancel
+        '
+        Me.btnCancel.BackColor = System.Drawing.Color.DeepPink
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.Color.White
+        Me.btnCancel.Location = New System.Drawing.Point(664, 413)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(100, 25)
+        Me.btnCancel.TabIndex = 18
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = False
+        '
         'frmPatients
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.BackColor = System.Drawing.Color.LightPink
+        Me.ClientSize = New System.Drawing.Size(769, 454)
+        Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.txtAddress)
@@ -206,6 +233,7 @@ Partial Class frmPatients
         Me.Controls.Add(Me.PatientsForm)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmPatients"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Patients"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -229,4 +257,5 @@ Partial Class frmPatients
     Friend WithEvents txtAddress As TextBox
     Friend WithEvents txtID As TextBox
     Friend WithEvents Label5 As Label
+    Friend WithEvents btnCancel As Button
 End Class

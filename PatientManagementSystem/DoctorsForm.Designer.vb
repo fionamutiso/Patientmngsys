@@ -34,6 +34,7 @@ Partial Class DoctorsForm
         Me.txtDoctorID = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtSpecialty = New System.Windows.Forms.TextBox()
+        Me.btnCancel = New System.Windows.Forms.Button()
         CType(Me.dgvDoctors, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,42 +86,54 @@ Partial Class DoctorsForm
         '
         'btnDelete
         '
-        Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnDelete.Location = New System.Drawing.Point(490, 307)
+        Me.btnDelete.BackColor = System.Drawing.Color.DeepPink
+        Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnDelete.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.ForeColor = System.Drawing.Color.White
+        Me.btnDelete.Location = New System.Drawing.Point(525, 382)
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(2)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(100, 25)
         Me.btnDelete.TabIndex = 6
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'btnAdd
         '
-        Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAdd.Location = New System.Drawing.Point(222, 240)
+        Me.btnAdd.BackColor = System.Drawing.Color.DeepPink
+        Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdd.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdd.ForeColor = System.Drawing.Color.White
+        Me.btnAdd.Location = New System.Drawing.Point(222, 380)
         Me.btnAdd.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(100, 25)
         Me.btnAdd.TabIndex = 7
         Me.btnAdd.Text = "Add"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.btnAdd.UseVisualStyleBackColor = False
         '
         'dgvDoctors
         '
+        Me.dgvDoctors.BackgroundColor = System.Drawing.Color.WhiteSmoke
         Me.dgvDoctors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDoctors.Location = New System.Drawing.Point(350, 63)
+        Me.dgvDoctors.GridColor = System.Drawing.Color.Silver
+        Me.dgvDoctors.Location = New System.Drawing.Point(392, 52)
         Me.dgvDoctors.Name = "dgvDoctors"
-        Me.dgvDoctors.Size = New System.Drawing.Size(240, 226)
+        Me.dgvDoctors.Size = New System.Drawing.Size(325, 295)
         Me.dgvDoctors.TabIndex = 8
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(350, 307)
+        Me.btnUpdate.BackColor = System.Drawing.Color.DeepPink
+        Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnUpdate.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnUpdate.ForeColor = System.Drawing.Color.White
+        Me.btnUpdate.Location = New System.Drawing.Point(392, 382)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.Size = New System.Drawing.Size(100, 25)
         Me.btnUpdate.TabIndex = 9
         Me.btnUpdate.Text = "Update"
-        Me.btnUpdate.UseVisualStyleBackColor = True
+        Me.btnUpdate.UseVisualStyleBackColor = False
         '
         'txtDoctorID
         '
@@ -145,11 +158,26 @@ Partial Class DoctorsForm
         Me.txtSpecialty.Size = New System.Drawing.Size(200, 20)
         Me.txtSpecialty.TabIndex = 13
         '
+        'btnCancel
+        '
+        Me.btnCancel.BackColor = System.Drawing.Color.DeepPink
+        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancel.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.ForeColor = System.Drawing.Color.White
+        Me.btnCancel.Location = New System.Drawing.Point(657, 382)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(100, 25)
+        Me.btnCancel.TabIndex = 14
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseVisualStyleBackColor = False
+        '
         'DoctorsForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(622, 360)
+        Me.BackColor = System.Drawing.Color.LightPink
+        Me.ClientSize = New System.Drawing.Size(769, 416)
+        Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.txtSpecialty)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtDoctorID)
@@ -164,6 +192,7 @@ Partial Class DoctorsForm
         Me.Controls.Add(Me.lblDoctorName)
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "DoctorsForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DoctorsForm"
         CType(Me.dgvDoctors, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -182,4 +211,5 @@ Partial Class DoctorsForm
     Friend WithEvents txtDoctorID As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txtSpecialty As TextBox
+    Friend WithEvents btnCancel As Button
 End Class
